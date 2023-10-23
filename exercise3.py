@@ -23,7 +23,7 @@ def calc_average(temperature_list):
         average = sum(temperature_list) / len(temperature_list)
         print(f"Average: {average:.2f}")
 
-# Function to find the minimum and maximum values in a list of floats
+# Function to find the minimum and maximum values in a list of floa
 def find_min_max(temperature_list):
     if not temperature_list:
         print("The list is empty. No minimum and maximum values to find.")
