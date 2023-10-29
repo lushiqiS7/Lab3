@@ -34,7 +34,7 @@ def test_bubble_sort_non_integer():
     # Test for non-integer values
     input_arr = [64, 34, 25, 12, "string", 11, 90]
     result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
-    assert result == 2  # Expecting 2 as per REQ-05
+    assert result == 2  # Expecting 2 as per REQ-5
 
 def test_bubble_sort_invalid():
     result = []
