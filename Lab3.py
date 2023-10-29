@@ -20,7 +20,7 @@ def bubble_sort(arr, sorting_order):
         return 0  # Return 0 as per REQ-04
 
     if not all(isinstance(item, int) for item in arr_result):
-        return 2  # Return 2 as per REQ-05
+        return 2  # Return 2 as per REQ-5
 
     if sorting_order not in [SORT_ASCENDING, SORT_DESCENDING]:
         return []  # Return an empty list for invalid sorting order
