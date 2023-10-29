@@ -1,4 +1,4 @@
-# Function to calculate the median temperature from a list of floats
+#exercise 6.py
 def calc_median_temperature(temperature_list):
     if not temperature_list:
         return None  # Handle the case of an empty list

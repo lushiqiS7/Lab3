@@ -1,4 +1,4 @@
-# Function to display the main menu
+#exercise3.py
 def display_main_menu():
     print("Enter some numbers separated by commas (e.g. 5, 67, 32)")
 
@@ -24,12 +24,11 @@ def calc_average(temperature_list):
 # Function to find the minimum and maximum values in a list of floa
 def find_min_max(temperature_list):
     if not temperature_list:
-        print("The list is empty. No minimum and maximum values to find.")
+        return [None, None]  # Handle the case of an empty list
     else:
         min_temp = min(temperature_list)
         max_temp = max(temperature_list)
-        print(f"Minimum Temperature: {min_temp}")
-        print(f"Maximum Temperature: {max_temp}")
+        return [min_temp, max_temp]
 
 # Function to sort a list of floats in ascending order
 def sort_temperature(temperature_list):
