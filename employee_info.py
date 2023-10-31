@@ -1,4 +1,4 @@
-# Define a dictionary to store employee information
+#employee_info.py
 employee_data = [
     {"name": "John", "age": 30, "department": "Sales", "salary": 50000},
     {"name": "Jane", "age": 25, "department": "Marketing", "salary": 60000},
@@ -11,27 +11,23 @@ employee_data = [
 def get_employees_by_age_range(age_lower_limit, age_upper_limit):
     result = []
 
-    # check for age limits and append the item to resul
     for item in employee_data:
-        if int(item["age"]) > int(age_lower_limit) and int(item["age"]) < int(age_upper_limit):
+        if age_lower_limit <= item["age"] <= age_upper_limit:
             result.append(item)
 
     return result
 
 def calculate_average_salary():
-    total = 0
-    average = 0
-
-    #add your implementation to calculate here
-
-
+    total = sum(item["salary"] for item in employee_data)
+    average = total / len(employee_data)
     return average
 
 def get_employees_by_dept(department):
     result = []
 
-    # Add your implementation from here
-
+    for item in employee_data:
+        if item["department"] == department:
+            result.append(item)
 
     return result
 
