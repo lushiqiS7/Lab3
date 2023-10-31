@@ -15,7 +15,7 @@ def bubble_sort(arr, sorting_order):
     if n > 10:
         return 1  # Return 1 as per REQ-03
 
-    # Handle cases with less than or equal to 10 numbers
+    # Handle cases with less tha
     if n == 0:
         return 0  # Return 0 as per REQ-04
 
